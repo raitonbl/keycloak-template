@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.raitonbl</groupId>
+    <artifactId>keycloak.template</artifactId>
+    <packaging>jar</packaging>
+    <version>1.1.0-RELEASE</version>
+
+    <properties>
+
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <keycloak.version>11.0.2</keycloak.version>
+        <apache.commons.version>3.11</apache.commons.version>
+        <jboss.logging.version>3.4.1.Final</jboss.logging.version>
+        <microprofile.config.version>1.4</microprofile.config.version>
+
+    </properties>
+
+    <name>com.raitonbl.keycloak.template</name>
+    <url>https://github.com/Delfimarime/keycloak</url>
+
+    <organization>
+        <name>RaitonBL</name>
+        <url>https://raitonbl.com</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>RaitonBL</id>
+            <name>Delfim Marime</name>
+            <email>Delfimarime@raitonbl.com</email>
+        </developer>
+    </developers>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/Delfimarime/keycloak</url>
+        </repository>
+    </distributionManagement>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
+            <scope>provided</scope>
+            <version>${jboss.logging.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-core</artifactId>
+            <scope>provided</scope>
+            <version>${keycloak.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-services</artifactId>
+            <scope>provided</scope>
+            <version>${keycloak.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-server-spi</artifactId>
+            <scope>provided</scope>
+            <version>${keycloak.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-server-spi-private</artifactId>
+            <scope>provided</scope>
+            <version>${keycloak.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>com.raitonbl.keycloak.template</finalName>
+
+        <plugins>
+
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.7.0.1746</version>
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+</project>

@@ -1,0 +1,1 @@
+${msg('greeting')} ${fullName} , ${msg('description')} ${identityProviderAlias} ${msg('use')} ${oneTimePin} within ${durationInMinutes} ${msg('unity')}
