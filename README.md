@@ -1,4 +1,4 @@
-# keycloak Template
+# keycloak template
 Intended to extend [Keycloak](https://www.keycloak.org/) features through a standard api which abstracts templating.
 This project enables:
 * Template api abstraction - Making it possible to design template dependent features without vendor locking. This api needs to be deployed on [Keycloak](https://www.keycloak.org/) whenever a Templating vendor is to be deployed.  
